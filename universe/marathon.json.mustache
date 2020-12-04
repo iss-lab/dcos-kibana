@@ -38,7 +38,7 @@
     "DCOS_PACKAGE_FRAMEWORK_NAME": "{{service.name}}"
   },
   "env": {
-    "ELASTIC_VERSION": "6.8.1",
+    "ELASTIC_VERSION": "7.6.0",
     "FRAMEWORK_NAME": "{{service.name}}",
     "FRAMEWORK_USER": "{{service.user}}",
     "KIBANA_PLUGINS": "{{kibana.plugins}}",
@@ -68,7 +68,7 @@
     },
     {
       "uri": "{{resource.assets.uris.nginx-conf-tmpl}}",
-      "cache": true
+      "cache": false
     }
   ],
   "upgradeStrategy":{
